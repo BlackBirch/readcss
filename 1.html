@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test_one</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	ul {
+		list-style: none;
+	}
+	a:active{ 
+		text-decoration: none;
+	}
+	.color-text {
+		padding: 6px 16px;
+		margin: 10px;
+		width: 30px;
+		border:1px solid #446d88;
+		/*background: #58a linear-gradient(hsla(0,0%,50%,1),#58a);*/
+		background: hsla(120,100%,70%,1);   /* like rainbow */
+		color: white;
+	}
+	hr {
+	height: .5em;
+	background: currentColor;  /*与字体颜色同步*/
+	}
+	.callout {
+		position: relative;
+	}
+	.callout::before {
+		content: '';
+		position: absolute;
+		top: -.4em;left:1em;
+		padding:.35em;
+
+	}
+</style>
+<body>
+	<div class="color-text">
+		Yes!
+		<hr>
+	</div>
+	div.
+	<div class="callout">
+		For systems that do not have a corresponding value, the specified value should be mapped to the nearest system color value, or to a default color. 
+	</div>
+</body>
+</html>

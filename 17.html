@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transition-image</title>
+</head>
+<style>
+	.transition-image {
+		width:150px;
+		height: 150px;
+		background: url('sunshine.png') no-repeat;
+		background-size :auto 100%;
+		transition: background-position 2s;
+	}
+	.transition-image:hover{
+		background-position:100% 0;
+	}
+</style>
+<body>
+	<div class="transition-image">
+	</div>
+</body>
+</html>

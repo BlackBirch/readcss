@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hsla-color</title>
+</head>
+<style>
+	body,main::before {
+		background: url("sunshine.png") 0 / cover fixed;
+	}
+	main {
+		background: hsla(0,0%,100%,.3);
+		margin: 25% auto;
+		width: 800px;
+		position: relative;
+		overflow: hidden;
+	}
+	main::before {
+		content: '';
+		position: absolute;
+		top:0;right:0;bottom:0;left:0;
+		-webkit-filter: blur(50px);
+		-o-filter: blur(50px);
+		filter: blur(50px);
+
+	}
+	blockquote {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+</style>
+<body>
+	<main>
+		<blockquote>
+			"Converts the input image to sepia. The value of ‘amount’ defines the proportion of the conversion. A value of 100% is completely sepia. A value of 0% leaves the input unchanged. Values between 0% and 100% are linear multipliers on the effect. If the ‘amount’ parameter is missing, a value of 0 is used."
+			<footer>
+				<cite>sepia</cite>
+			</footer>
+		</blockquote>
+	</main>
+</body>
+</html>

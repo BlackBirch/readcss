@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>circle-font</title>
+</head>
+<style>
+	.circular path {
+		fill: none;
+	}
+	.circular {
+		width: 200px;
+		height: 200px;
+	}
+	.circular svg {
+		display: block;
+		overflow: visible;
+	}
+</style>
+<body>
+	<div class="circular">
+		<svg viewBox="0 0 100 100">
+			<path d="M 20,40 a 20,20 0 1,1 0,1 z" id="circle" />
+			<text>
+				<textPath xlink:href="#circle">
+					Converts 
+				</textPath>
+			</text>
+		</svg>
+	</div>
+</body>
+</html>

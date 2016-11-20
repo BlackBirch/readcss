@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>write-animation</title>
+</head>
+<style>
+
+	@keyframes typing {
+		from {width:0}
+	}
+	@keyframes caret {
+		50% {border-color:transparent;}
+	}
+	h1 {
+		font-family:"黑体", Verdana, Arial, Helvetica, sans-serif;
+		width: 15ch;
+		white-space: nowrap;
+		overflow: hidden;
+		border-right:.05em solid;
+		animation: typing 6s steps(15),
+					caret 1s steps(1) infinite;
+	}
+</style>
+<body>
+	<h1>CSS is awesome!</h1>
+</body>
+</html>

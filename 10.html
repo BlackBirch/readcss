@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>svg</title>
+</head>
+<style>
+	svg { 
+		transform: rotate(-90deg);
+		border-radius: 50%;
+		background-color: #e74c3c;
+	}
+	@-webkit-keyframes fillup {
+		to { stroke-dasharray: 158 158;
+			}
+	}
+	@keyframes fillup {
+		to { 
+			stroke-dasharray: 158 158;
+		}
+	}
+	circle {
+		fill: #e74c3c;
+		stroke: #655;
+		stroke-width: 70;
+		stroke-dasharray: 0 158;
+		animation: fillup 5s linear infinite;	
+		-webkit-animation: fillup 5s linear infinite;
+	}
+	rect {
+		fill: #e74c3c;
+		stroke: #655;
+		stroke-width: 50;
+		stroke-dasharray: 40 188;
+	}
+</style>
+<body>
+	<svg width="100" height="100">
+		<circle r="35" cx="50" cy="50"/>
+	</svg>
+	<!-- <svg width="100" height="100">
+		<rect rx="5" ry="5" width="100" height="100">
+	</svg> -->
+	<div class="pie">20%</div>
+	<div class="pie">60%</div>
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	$('.pie').each(function(){
+		var p = parseFloat(this.textContent);
+		var NS = 'http://www.w3.org/2000/svg';
+		var svg = document.createElementNS(NS,'svg');
+		var circle = document.createElementNS(NS,'circle');
+		var title = document.createElementNS(NS,'title');
+		circle.setAttribute('r',16);
+		circle.setAttribute('cx',16);
+		circle.setAttribute('cy',16);
+		circle.setAttribute('stroke-dasharray',p+'100');
+		svg.setAttribute('viewBox','0 0 32 32');
+		title.textContent = this.textContent;
+		svg.append(title);			//这块
+		svg.append(circle);			//这块
+		this.append(svg);			//这块
+	});
+	</script>
+</body>
+</html>

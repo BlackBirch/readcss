@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shape</title>
+</head>
+<style>
+	.ellipse {
+		background: #3498db;
+		width: 200px;
+		height: 100px;
+		margin: 0 auto;
+		border-radius: 0 100% 100% 0 /50%;
+	}
+	.parallelogram {
+		text-align: center;
+		background: #e74c3c;
+		width: 100px;
+		height: 50px;
+		-webkit-transform: skewX(-45deg);
+		-ms-transform: skewX(-45deg);
+		-o-transform: skewX(-45deg);
+		transform: skewX(-45deg);	
+		margin: 0 auto;
+	}
+	.parallelogram > span {
+		display: inline-block;
+		width: 50px;
+		height: 25px;
+		margin-top: 15px;
+		color: white;
+		transform: skewX(45deg);	
+		-webkit-transform: skewX(45deg);
+	}
+	.rhombus {
+		width:100px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		overflow: hidden;
+	}
+	.rhombus > img {
+		transform: rotate(-45deg) scale(1.42);
+		-webkit-transform: rotate(-45deg) scale(1.42);
+
+	}
+</style>
+<body>
+	<div class="ellipse">
+	</div>
+	<div class="parallelogram">
+		<span>haha</span>
+	</div>
+	<div class="rhombus">
+		<img src="2.jpeg" width="100" alt="">
+	</div>
+</body>
+</html>

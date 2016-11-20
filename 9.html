@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>border-shape</title>
+</head>
+<style>
+	.single-border {
+		background: #e74c3c;
+		background: linear-gradient(-45deg,transparent 15px,#e74c3c 0) bottom right,
+		            linear-gradient(135deg,transparent 15px,#e74c3c 0) top left,
+		            linear-gradient(-135deg,transparent 15px,#e74c3c 0) top right,
+		            linear-gradient(45deg,transparent 15px,#e74c3c 0) bottom left;
+		background-size: 50% 50%;
+		background-repeat: no-repeat;
+		color: white;
+		width: 200px;
+		height: 100px;
+		padding: 20px;
+		margin: 0 auto;
+	}
+	.radius-border {
+		background: #2ecc71;
+		background: radial-gradient(circle at bottom right,transparent 15px,#2ecc71 0) bottom right,
+		radial-gradient(circle at bottom left, transparent 15px, #2ecc71 0) bottom left,
+		radial-gradient(circle at top left,transparent 15px, #2ecc71 0) top left,
+		radial-gradient(circle at top right,transparent 15px, #2ecc71 0) top right;
+		background-size: 50% 50%;
+		background-repeat: no-repeat;
+		color: white;
+		width: 200px;
+		height: 100px;
+		padding: 20px;
+		margin: 1em auto;
+	}
+</style>
+<body>
+	<div class="single-border">
+		Setting the canvas height to 100% means it will scale based on the height of the component’s root element – just as SVG’s do in non-IE browsers.
+	</div>
+	<div class="radius-border">
+		Setting the canvas height to 100% means it will scale based on the height of the component’s root element – just as SVG’s do in non-IE browsers.
+	</div>
+</body>
+</html>

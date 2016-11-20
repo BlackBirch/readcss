@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-shadow</title>
+</head>
+<style>
+	.shape {
+		width: 200px;
+		height: 100px;
+		background: #e74c3c;
+		padding: 20px;
+		color: white;
+		margin:10px auto;
+		-webkit-filter: drop-shadow(2px 2px 5px 5px rgba(0,0,0,.5));
+		filter: drop-shadow(2px 2px 5px rgba(0,0,0,.5));
+		background: linear-gradient(45deg,transparent 15px,#e74c3c 0) bottom left,
+		linear-gradient(-45deg,transparent 15px,#e74c3c 0) bottom right,
+		linear-gradient(135deg,transparent 15px,#e74c3c 0) top left,
+		linear-gradient(-135deg,transparent 15px,#e74c3c 0) top right;
+		background-size: 50% 50%;
+		background-repeat: no-repeat;
+	}
+</style>
+<body>
+	<div class="shape">
+		Setting the canvas height to 100% means it will scale based on the height of the component’s root element – just as SVG’s do in non-IE browsers.
+	</div>
+</body>
+</html>

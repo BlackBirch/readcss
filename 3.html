@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>white-space</title>
+</head>
+<style>
+	.back-img {
+		background: url('smallb.jpg') ;
+		width: 100px;
+		height: 100px;
+	}
+	.cn-content {
+		display: inline-block;
+		text-align: center;
+    	margin: 15px;
+		width: 50px;
+		height: 50px;
+		border: 10px solid rgba(0,0,0,0.5);
+    	background: white;
+    	background-clip: padding-box;  /*背景的绘制区域 border-box边框盒 padding-box内边距框 content-box 内容框*/
+	}
+	span {
+		font-size: 10px;
+	}
+</style>
+<body>
+	<div class="back-img">
+		<div class="cn-content">
+		<span>PHP</span>
+	</div>
+	</div>
+</body>
+</html>

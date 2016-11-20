@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shadow</title>
+</head>
+<style>
+	.box {
+		margin: 100px auto;
+		width: 100px;
+		height: 100px;
+		background: #2ECC71;
+		outline: 1px dashed white;
+		outline-offset: -5px;		/*outline与边框间距*/
+	}
+	.box-back {
+		margin: 100px auto;
+		width: 160px;
+		height: 60px;
+		padding: 10px;
+		border: 10px solid #3498db;
+		background: url('2.jpeg') no-repeat #9B59B6;
+		/*background-position: left 10px bottom 10px;*/
+		background-origin: content-box; /*border-box 相对于[border-box]来定位背景图片 padding-box content-box*/
+	}
+	.box-radius {
+		margin: 100px auto;
+		width: 160px;
+		height: 60px;
+		background: #bdc3c7;
+		border-radius: 10px;
+		padding: 1px;
+		box-shadow: 0 0 0 4px #34495e;
+		outline: 8px solid #34495e;
+	}
+</style>
+<body>
+	<div class="box">
+	</div>
+
+	<div class="box-back">
+	</div>
+
+	<div class="box-radius">
+	</div>
+</body>
+</html>
